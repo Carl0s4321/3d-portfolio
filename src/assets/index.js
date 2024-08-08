@@ -25,9 +25,10 @@ import idtech from './company/idtech.png';
 import gongcha from './company/gongcha.png';
 import pointsushi from './company/pointsushi.jpg';
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import studybuddy from "./studybuddy.gif"
+import snakesnack from "./snakesnack.gif"
+import twokings from "./twokings.gif"
+import itch from "./itch.png"
 
 export {
   logo,
@@ -54,7 +55,8 @@ export {
   idtech,
   gongcha,
   pointsushi,
-  carrent,
-  jobit,
-  tripguide,
+  studybuddy,
+  snakesnack,
+  twokings,
+  itch,
 };

@@ -18,10 +18,13 @@ import {
     idtech,
     gongcha,
     pointsushi,
-    carrent,
-    jobit,
-    tripguide,
+    studybuddy,
+    snakesnack,
+    twokings,
+    github,
+    itch,
     threejs,
+
   } from "../assets";
   
   export const navLinks = [
@@ -30,8 +33,8 @@ import {
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -185,58 +188,28 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "StudyBuddy",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "vue.js",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "docker",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "node.js",
           color: "pink-text-gradient",
         },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
         {
-          name: "react",
+          name: "javascript",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: jobit,
-      source_code_link: "https://github.com/",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "supabase",
+          name: "html",
           color: "green-text-gradient",
         },
         {
@@ -244,8 +217,53 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: studybuddy,
+      source_code_link: "https://github.com/HAPPYSACKS/SENG513Project",
+      link_image:github,
+    },
+    {
+      name: "Snake Snack",
+      description:
+        "developed for club showcase and fit into a makeshift arcade machine, i.e. for fun lol.",
+      tags: [
+        {
+          name: "godot",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "gdscript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: snakesnack,
+      source_code_link: "https://coloredasterisk.itch.io/snake-snack",
+      link_image:itch,
+    },
+    {
+      name: "Two Kings",
+      description:
+        "aaa",
+      tags: [
+        {
+          name: "html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "javascript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: twokings,
+      source_code_link: "https://github.com/Carl0s4321/TwoKings",
+      link_image:github,
     },
   ];
   
