@@ -9,17 +9,47 @@ import { slideIn } from '../utils/motion'
 
 
 const Contact = () => {
-  const [loading, useLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleChange = () => {};
-  const handleSubmit = () => {};
-
+  
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
     email: '',
     message: '',
   })
+  
+  const handleChange = (event) => {
+    const{name, value} = event.target;
+    // updates the name to value
+    setForm({...form, [name]: value})
+  };
+  const handleSubmit = (event) => {
+    // prevent browser default behaviour
+    event.preventDefault();
+    setLoading(true);
+    emailjs.send("service_563zhfe", "template_ntszuka", {
+      from_name: form.name,
+      to_name: 'Carlos',
+      from_email: form.email,
+      to_email:"lostcar74@gmail.com",
+      message: form.message,
+    }, "nticuUxswSMJYQYJh").then(()=>{
+      setLoading(false);
+      alert('Thank you, I wil get back to you asap.');
+      
+      setForm({
+        name: '',
+        email: '',
+        message: '',
+      })
+    },(error) => {
+      setLoading(false);
+      console.log(error);
+      alert('bleh')
+    }
+  )
+  };
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
