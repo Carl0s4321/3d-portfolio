@@ -9,13 +9,15 @@ const App = () => {
           <Navbar/>
           <Hero/>
         </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Projects/>
-        <div className="relative z-0">
-          <Contact/>
-          <StarsCanvas/>
+        <div className="relative mt-px bg-primary">
+          <About/>
+          <Experience/>
+          <Tech/>
+          <Projects/>
+          <div className="relative z-0">
+            <Contact/>
+            <StarsCanvas/>
+          </div>
         </div>
       </div>
     </BrowserRouter>

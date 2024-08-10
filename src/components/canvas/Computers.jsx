@@ -4,16 +4,20 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import CanvasLoader from '../Loader'
 
 const Computers = ({isMobile}) => {
-  const computer = useGLTF('./desktop_pc/scene.gltf')
+  const computer = useGLTF('./spaceman/scene.gltf')
   return (
     <mesh>
-      <hemisphereLight intensity={2} groundColor='black'/>
-      <pointLight intensity={20} position={[2, -1.5, 0]}/>
+        <directionalLight position={[1, 1, 1]} intensity={2} />
+        <ambientLight intensity={0.5} />
+        <pointLight position={[10, 5, 10]} intensity={2} />
+        <spotLight position={[0, 50, 10]} angle={0.15} penumbra={1} intensity={2} />
+        <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1} />
       {/* <spotLight position={[-20, 50, 10]} angle={0.12} penumbsra={1} intensity={100} castShadow shadow-mapSize={1024}/> */}
       <primitive object={computer.scene} 
-        scale={isMobile? 0.4 : 0.75} 
-        position={isMobile? [0,-2,-0.63]:[0, -3.75, -1.5]} 
-        rotation={[-0.01, -0.2, -0.1]}/>
+        scale={isMobile? 0.4 : 1.75}
+        position={isMobile? [0,-2,-0.63]:[0, -3.75, 0]} 
+        rotation={[-0.01, -0.2, -0.1]}
+        />
     </mesh> 
   )
 }

@@ -114,6 +114,72 @@
   -webkit-text-fill-color: transparent;
 }
 
+.parallax {
+  position: relative;
+  min-height: 95vh;
+  width: 100%;
+  left: 50%; /* Center the image horizontally */
+  transform: translateX(-50%); /* Center the image horizontally */
+  display: grid;
+  grid-template-areas: "stack";
+}
+
+.parallax > * {
+  grid-area: stack;
+  animation: parallax linear;
+  animation-timeline: scroll();
+}
+
+.parallax__planet {
+  --parallax-speed: 750;
+  z-index: 2;
+}
+
+.parallax__4 {
+  --parallax-speed: 600;
+  z-index: 3;
+}
+
+.parallax__3 {
+  --parallax-speed: 570;
+  z-index: 4;
+}
+
+.parallax__2 {
+  --parallax-speed: 400;
+  z-index: 5;
+}
+
+.parallax__1b {
+  --parallax-speed: 50;
+  z-index: 6;
+}
+.parallax__1c {
+  --parallax-speed: 300;
+  z-index: 15;
+}
+.parallax__1e {
+  --parallax-speed: 50;
+  z-index: 10;
+}
+.parallax__1d {
+  --parallax-speed: 50;
+  z-index: 8;
+}
+
+
+
+.parallax__content {
+  --parallax-speed: 210;
+  z-index: 9;
+}
+
+@keyframes parallax {
+  to {
+    transform: translateY(calc(var(--parallax-speed) * 1vh));
+  }
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;
