@@ -132,39 +132,55 @@
 
 .parallax__planet {
   --parallax-speed: 750;
+  height: 100%;
   z-index: 2;
+  object-fit: cover;
 }
 
 .parallax__4 {
   --parallax-speed: 600;
   z-index: 3;
+  height: 100%;
+  object-fit: cover;
 }
 
 .parallax__3 {
   --parallax-speed: 570;
   z-index: 4;
+  height: 100%;
+  object-fit: cover;
 }
 
 .parallax__2 {
   --parallax-speed: 400;
   z-index: 5;
+  height: 100%;
+  object-fit: cover;
 }
 
 .parallax__1b {
   --parallax-speed: 50;
   z-index: 6;
+  height: 100%;
+  object-fit: cover;
 }
 .parallax__1c {
   --parallax-speed: 300;
   z-index: 15;
+  object-fit: cover;
+  height: 100%;
 }
 .parallax__1e {
   --parallax-speed: 50;
   z-index: 10;
+  object-fit: cover;
+  height: 100%;
 }
 .parallax__1d {
   --parallax-speed: 50;
   z-index: 8;
+  object-fit: cover;
+  height: 100%;
 }
 
 

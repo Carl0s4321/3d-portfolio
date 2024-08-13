@@ -6,6 +6,7 @@ import { styles } from '../styles'
 import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const Contact = () => {
@@ -78,9 +79,24 @@ const Contact = () => {
 
           </label>
 
-          <button type="submit" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
-            {loading? 'Sending': 'sent'}
-          </button>
+          <div className='flex flex-wrap flex-row'>
+            <div>
+              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                resume
+              </button>
+              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                <FontAwesomeIcon icon="fa-brands fa-github" />
+              </button>
+              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                linkedin
+              </button>
+            </div>
+            <button type="submit" className='bg-tertiary hover:bg-secondary hover:text-indigo-950 py-3 px-10 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+              {loading? 'sending': 'send'}
+            </button>
+
+
+          </div>
 
         </form>
       </motion.div>
