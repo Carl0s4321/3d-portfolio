@@ -11,3 +11,7 @@ Currently, two official plugins are available:
 1. npm install
 2. cd portfolio
 3. npm run dev
+
+
+Asset used:
+1. Hero picture: [space background with alien planet at night by vecteezy.com](https://www.vecteezy.com/vector-art/16962630-space-background-with-alien-planet-at-night)
