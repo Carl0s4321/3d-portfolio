@@ -3,7 +3,7 @@ import {About, Contact, Experience, Hero, Navbar, Tech, Projects, StarsCanvas} f
 
 const App = () => {
   return (
-    <BrowserRouter className="overflow-hidden">
+    <BrowserRouter className="overflow-hidden" basename="/3d-portfolio/">
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar/>

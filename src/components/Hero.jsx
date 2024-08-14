@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { oneB,oneC,oneD,oneE,two,three,four,planet } from '../assets'
 
 const Hero = () => {
   return (
@@ -17,14 +18,14 @@ const Hero = () => {
             </div>
           </div>
 
-        <img className="parallax__planet " src="../src/assets/herobg/planet.png" alt=""/>
-        <img className="parallax__4" src="../src/assets/herobg/4.png" alt=""/>
-        <img className="parallax__3" src="../src/assets/herobg/3.png" alt=""/>
-        <img className="parallax__2" src="../src/assets/herobg/2.png" alt=""/>
-        <img className="parallax__1b" src="../src/assets/herobg/1b.png" alt=""/>
-        <img className="parallax__1c" src="../src/assets/herobg/1c.png" alt=""/>
-        <img className="parallax__1e" src="../src/assets/herobg/1e.png" alt=""/>
-        <img className="parallax__1d" src="../src/assets/herobg/1d.png" alt=""/>
+        <img className="parallax__planet " src={planet} alt=""/>
+        <img className="parallax__4" src={four} alt=""/>
+        <img className="parallax__3" src={three} alt=""/>
+        <img className="parallax__2" src={two} alt=""/>
+        <img className="parallax__1b" src={oneB} alt=""/>
+        <img className="parallax__1c" src={oneC} alt=""/>
+        <img className="parallax__1e" src={oneE} alt=""/>
+        <img className="parallax__1d" src={oneD} alt=""/>
 
 
         {/* <ComputersCanvas/> */}

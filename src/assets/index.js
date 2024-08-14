@@ -30,6 +30,16 @@ import snakesnack from "./snakesnack.gif"
 import twokings from "./twokings.gif"
 import itch from "./itch.png"
 
+import oneB from "./herobg/1b.png"
+import oneC from "./herobg/1c.png"
+import oneD from "./herobg/1d.png"
+import oneE from "./herobg/1e.png"
+import two from "./herobg/2.png"
+import three from "./herobg/3.png"
+import four from "./herobg/4.png"
+import planet from "./herobg/planet.png"
+
+
 import resume from "./SujantoCarlosResumeV52024.pdf"
 
 export {
@@ -61,5 +71,13 @@ export {
   snakesnack,
   twokings,
   itch,
+  oneB,
+  oneC,
+  oneD,
+  oneE,
+  two,
+  three,
+  four,
+  planet,
   resume,
 };
