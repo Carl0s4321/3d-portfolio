@@ -33,13 +33,13 @@ const About = () => {
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-      Lorem Ipsum is simply dummy text of the printing and 
-      typesetting industry. Lorem Ipsum has been the industry's 
-      standard dummy text ever since the 1500s, when an unknown 
-      printer took a galley of type and scrambled it to make a 
-      type specimen book. It has survived not only five centuries, 
-      but also the leap into electronic typesetting, remaining 
-      essentially unchanged. It was popularised in the 1960s with
+        I'm a third-year computer science student at the University of Calgary 
+        with strong proficiency in programming, web development, and 3D animation. 
+        I have a proven track record of delivering projects on time, including 
+        interactive applications, games, and websites. I’m skilled in technologies 
+        like JavaScript, React, Java, and Python. I enjoy working on diverse 
+        projects and am passionate about using technology to create engaging 
+        user experiences, while constantly learning new things to enhance my skills.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -51,4 +51,4 @@ const About = () => {
   )
 }
 
-export default SectionWrapper(About, "about")
+  export default SectionWrapper(About, "about")

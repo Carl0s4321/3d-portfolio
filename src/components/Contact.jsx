@@ -9,7 +9,7 @@ import { slideIn } from '../utils/motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faFileAlt } from '@fortawesome/free-solid-svg-icons'; // Example of a solid icon
+import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Example of a solid icon
 import { resume } from '../assets'
 
 
@@ -29,9 +29,16 @@ const Contact = () => {
     // updates the name to value
     setForm({...form, [name]: value})
   };
+
   const handleSubmit = (event) => {
     // prevent browser default behaviour
     event.preventDefault();
+
+    if (!form.name || !form.email || !form.message) {
+      alert('Please fill out all fields.');
+      return;
+    }
+
     setLoading(true);
     emailjs.send("service_563zhfe", "template_ntszuka", {
       from_name: form.name,
@@ -41,7 +48,7 @@ const Contact = () => {
       message: form.message,
     }, "nticuUxswSMJYQYJh").then(()=>{
       setLoading(false);
-      alert('Thank you, I wil get back to you asap.');
+      alert('Thank you, I will get back to you asap.');
       
       setForm({
         name: '',
@@ -51,7 +58,7 @@ const Contact = () => {
     },(error) => {
       setLoading(false);
       console.log(error);
-      alert('bleh')
+      alert('An error occurred, please try again later.');
     }
   )
   };
@@ -86,13 +93,13 @@ const Contact = () => {
           <div className='flex flex-wrap flex-row items-center justify-between'>
             <div className='flex flex-row gap-2'>
               <a href={resume} target="_blank"
-                  rel="noreferrer" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
-                  <FontAwesomeIcon icon={faFileAlt} /> Resume
+                  rel="noreferrer" className='bg-tertiary hover:bg-secondary hover:text-indigo-950 py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                  <FontAwesomeIcon icon={faDownload} /> Resume
               </a>
-              <a href={"https://github.com/Carl0s4321"} className='bg-tertiary py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+              <a href={"https://github.com/Carl0s4321"} className='bg-tertiary hover:bg-secondary hover:text-indigo-950 py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
                   <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href={"https://www.linkedin.com/in/carlos-sujanto/"} className='bg-tertiary py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+              <a href={"https://www.linkedin.com/in/carlos-sujanto/"} className='bg-tertiary hover:bg-secondary hover:text-indigo-950 py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
                   <FontAwesomeIcon icon={faLinkedin} />
               </a>
 

@@ -28,7 +28,12 @@ import pointsushi from './company/pointsushi.jpg';
 import studybuddy from "./studybuddy.gif"
 import snakesnack from "./snakesnack.gif"
 import twokings from "./twokings.gif"
+import sfm from "./sfm.gif"
 import itch from "./itch.png"
+import youtube from "./youtube.png"
+import splitit from "./splitIT.png"
+import castle from "./castle.gif"
+import blender from "./blender.png"
 
 import oneB from "./herobg/1b.png"
 import oneC from "./herobg/1c.png"
@@ -70,6 +75,11 @@ export {
   studybuddy,
   snakesnack,
   twokings,
+  sfm,
+  castle,
+  blender,
+  youtube,
+  splitit,
   itch,
   oneB,
   oneC,

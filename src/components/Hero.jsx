@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
 import { oneB,oneC,oneD,oneE,two,three,four,planet } from '../assets'
 
 const Hero = () => {
@@ -26,9 +25,6 @@ const Hero = () => {
         <img className="parallax__1c" src={oneC} alt=""/>
         <img className="parallax__1e" src={oneE} alt=""/>
         <img className="parallax__1d" src={oneD} alt=""/>
-
-
-        {/* <ComputersCanvas/> */}
 
 
       <div className='absolute xs:bottom-10 bottom-24 w-full flex justify-center items-center' style={{zIndex: 15}}>

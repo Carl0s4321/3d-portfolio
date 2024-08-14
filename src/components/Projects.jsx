@@ -6,11 +6,19 @@ import { SectionWrapper } from '../hoc'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link, link_image}) =>{
+const ProjectCard = ({index, name, description, tags, image, source_code_link, link_image,label}) =>{
+
+  const handleOpenLink = () => {
+    if (source_code_link) {
+      window.open(source_code_link, "_blank");
+    }
+  };
+  
+  
   return(
     <motion.div variants={fadeIn("right", "spring", 0.5*index, 0.75)}>
       <Tilt options={{max:45, scale: 1, speed:450}} className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
-        <div className="cursor-pointer" onClick={() => window.open(source_code_link, "_blank")}>
+        <div className={source_code_link === "" ? "cursor-default" : "cursor-pointer"} onClick={handleOpenLink}>
           <div className="relative w-full h-[230px]">
             <img src={image} alt={name} className='w-full h-full object-cover rounded-xl'/>
             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
@@ -22,7 +30,18 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, l
           </div>
 
           <div className='mt-5'>
-            <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+            <div className='flex items-center gap-5'>
+              <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+              <sup
+                className={`text-sm align-top rounded-lg px-2 py-1 ${
+                  label === 'WIP'
+                    ? 'bg-yellow-500'
+                    : label === 'NEW'
+                    ? 'bg-green-700'
+                    : 'hidden'
+                }`}
+              >{label}</sup>
+            </div>
             <p className='mt-2 text-secondary text-[14px]'>{description}</p>
             <div className='mt-4 flex flex-wrap gap-2'>
               {tags.map((tag) => (
@@ -49,13 +68,10 @@ const Projects = () => {
 
       <div className="w-full flex">
         <motion.p variants={fadeIn("", "", 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        Lorem Ipsum is simply dummy text of the printing and 
-        typesetting industry. Lorem Ipsum has been the industry's 
-        standard dummy text ever since the 1500s, when an unknown 
-        printer took a galley of type and scrambled it to make a 
-        type specimen book. It has survived not only five centuries, 
-        but also the leap into electronic typesetting, remaining 
-        essentially unchanged. It was popularised in the 1960s with
+        A collection of projects I created either during free time or as part of class work, 
+        showcasing a variety of skills and interests. 
+        These include interactive games, web applications, 
+        and animations, reflecting creativity and technical proficiency.
         </motion.p>
       </div>
       
