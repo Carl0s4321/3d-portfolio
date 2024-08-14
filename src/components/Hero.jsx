@@ -8,7 +8,7 @@ const Hero = () => {
       <section className="parallax">
           <div className='parallax__content absolute top-[25%] sm:top-[16%] lg:top-[22%] w-full mx-auto z-10 flex flex-col lg:flex-row px-10 lg:pl-28 items-center justify-items-center'>
             <div className="flex-1 lg:mb-0">
-              <h1 className={`${styles.heroHeadText} text-center lg:text-left`}>CARLOS<br/>SUJANTO</h1>
+              <h1 className={`${styles.heroHeadText} leading-none md:leading-tight text-center lg:text-left`}>CARLOS<br/>SUJANTO</h1>
             </div>
             <div className="flex-1 flex flex-wrap text-center lg:text-left lg:justify-end ">
               <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg z-11`}>

@@ -7,6 +7,10 @@ import { EarthCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons'; // Example of a solid icon
+import { resume } from '../assets'
 
 
 const Contact = () => {
@@ -79,17 +83,19 @@ const Contact = () => {
 
           </label>
 
-          <div className='flex flex-wrap flex-row'>
-            <div>
-              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
-                resume
-              </button>
-              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
-                <FontAwesomeIcon icon="fa-brands fa-github" />
-              </button>
-              <button className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
-                linkedin
-              </button>
+          <div className='flex flex-wrap flex-row items-center justify-between'>
+            <div className='flex flex-row gap-2'>
+              <a href={resume} target="_blank"
+                  rel="noreferrer" className='bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                  <FontAwesomeIcon icon={faFileAlt} /> Resume
+              </a>
+              <a href={"https://github.com/Carl0s4321"} className='bg-tertiary py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                  <FontAwesomeIcon icon={faGithub} />
+              </a>
+              <a href={"https://www.linkedin.com/in/carlos-sujanto/"} className='bg-tertiary py-3 px-6 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
+                  <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+
             </div>
             <button type="submit" className='bg-tertiary hover:bg-secondary hover:text-indigo-950 py-3 px-10 outline-none w-fit text-white font-bold shadow-empty shadow-primary rounded-xl'>
               {loading? 'sending': 'send'}

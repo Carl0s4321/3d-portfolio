@@ -7,8 +7,21 @@ import {logo, menu, close} from '../assets'
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
+
+  var prevScrollpos = window.scrollY;
+  window.onscroll = function() {
+  var currentScrollPos = window.scrollY;
+    if (prevScrollpos > currentScrollPos) {
+      document.querySelector("nav").style.top = "0";
+    } else {
+      document.querySelector("nav").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`} style={{ transition: 'top 0.3s' }}>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
 
         {/* LOGO AND NAME */}

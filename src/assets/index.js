@@ -30,6 +30,8 @@ import snakesnack from "./snakesnack.gif"
 import twokings from "./twokings.gif"
 import itch from "./itch.png"
 
+import resume from "./SujantoCarlosResumeV52024.pdf"
+
 export {
   logo,
   backend,
@@ -59,4 +61,5 @@ export {
   snakesnack,
   twokings,
   itch,
+  resume,
 };
