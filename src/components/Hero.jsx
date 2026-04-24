@@ -12,7 +12,7 @@ const Hero = () => {
             </div>
             <div className="flex-1 flex flex-wrap text-center lg:text-left lg:justify-end ">
               <p className={`${styles.heroSubText} mt-2 text-white-100 max-w-lg z-11`}>
-                Currently studying Computer Science at <span className='font-bold'>University of Calgary</span>
+                Recently graduated in Computer Science at <span className='font-bold'>University of Calgary</span>
               </p>
             </div>
           </div>

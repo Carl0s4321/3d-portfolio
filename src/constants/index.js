@@ -47,7 +47,7 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "IT Support",
       icon: web,
     },
     {
@@ -112,7 +112,7 @@ import {
       title: "Frontend Developer and IT Support",
       company_name: "Bondr GmbH",
       icon: bondr,
-      iconBg: "#95d600",
+      iconBg: "#000ff",
       date: "Dec 2024 - Jan 2026",
       points: [
         "Provided technical support by diagnosing and resolving software issues reported by end users",

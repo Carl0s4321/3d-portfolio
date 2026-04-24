@@ -47,7 +47,7 @@ import four from "./herobg/4.png"
 import planet from "./herobg/planet.png"
 
 
-import resume from "./SujantoCarlosResumeV52024.pdf"
+import resume from "./SujantoCarlosResume.pdf"
 
 export {
   logo,
