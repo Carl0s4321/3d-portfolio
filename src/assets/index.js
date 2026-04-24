@@ -22,8 +22,10 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import idtech from './company/idtech.png';
+import bondr from './company/bondr.png';
 import gongcha from './company/gongcha.png';
 import pointsushi from './company/pointsushi.jpg';
+
 
 import studybuddy from "./studybuddy.gif"
 import snakesnack from "./snakesnack.gif"
