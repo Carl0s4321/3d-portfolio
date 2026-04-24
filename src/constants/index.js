@@ -13,6 +13,7 @@ import {
     figma,
     docker,
     idtech,
+    bondr,
     gongcha,
     pointsushi,
     studybuddy,
@@ -107,6 +108,21 @@ import {
   ];
   
   const experiences = [
+    {
+      title: "Frontend Developer and IT Support",
+      company_name: "Bondr GmbH",
+      icon: bondr,
+      iconBg: "#95d600",
+      date: "Dec 2024 - Jan 2026",
+      points: [
+        "Provided technical support by diagnosing and resolving software issues reported by end users",
+        "Analyzed logs and error traces to identify root causes and ensure system reliability",
+"Assisted in full product development from user stories, UI/UX design, development, QA and deployment",
+"Managed support tickets, task prioritization, and issue follow-up calls",
+"Communicated technical issues clearly to both technical and non-technical stakeholders"
+
+      ],
+    },
     {
       title: "Level Designer and Cinematographer",
       company_name: "iD Tech Camps",
