@@ -71,6 +71,7 @@ export {
   tailwind,
   typescript,
   threejs,
+  bondr,
   idtech,
   gongcha,
   pointsushi,
